@@ -112,9 +112,7 @@ input, select, textarea {
 		-webkit-transition: border-color 0.1s ease-in-out;
 		-ms-transition: border-color 0.1s ease-in-out;
 		transition: border-color 0.1s ease-in-out;
-		border-bottom: dotted 1px;
 		color: inherit;
-		outline: 0;
 		text-decoration: none;
 	}
 
@@ -531,18 +529,18 @@ input, select, textarea {
 	}
 
 	#header {
-		-moz-animation: header 1s 2.25s forwards;
-		-webkit-animation: header 1s 2.25s forwards;
-		-ms-animation: header 1s 2.25s forwards;
-		animation: header 1s 2.25s forwards;
+		-moz-animation: header 1.5s 1.5s forwards; /* Duración: 1.5s, Retraso: 1.5s */
+		-webkit-animation: header 1.5s 1.5s forwards;
+		-ms-animation: header 1.5s 1.5s forwards;
+		animation: header 1.5s 1.5s forwards;
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-ms-backface-visibility: hidden;
 		backface-visibility: hidden;
-		-moz-transform: translate3d(0,0,0);
-		-webkit-transform: translate3d(0,0,0);
-		-ms-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
+		-moz-transform: translate3d(0, 0, 0);
+		-webkit-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
 		cursor: default;
 		display: inline-block;
 		opacity: 0;
@@ -552,6 +550,7 @@ input, select, textarea {
 		vertical-align: middle;
 		width: 90%;
 	}
+	
 
 		#header h1 {
 			font-size: 4.35em;
