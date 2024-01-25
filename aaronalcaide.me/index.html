@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+
+<html>
+	<style>
+
+body {
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #video-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0; /* Cambiado a 1 para que esté en el fondo */
+            opacity: 0.1; /* Ajusta la opacidad según sea necesario */
+            transform: scale(1.1);
+        }
+
+        #overlay {	
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3); /* Color de fondo con transparencia */
+            z-index: 2; /* Z-index superior para que esté por encima del video */
+		}
+
+        
+    </style>	
+
+
+
+	<head>
+		<title>Aarón Alcaide</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" href="favicon.png" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	</head>
+
+	<body style="background-image: url('assets/css/images/bg.jpg'); background-size: cover; background-position: center; height: 100vh; margin: 0;">
+		
+		<video id="video-overlay" preload autoplay loop muted>
+			<source src="humo.mp4" type="video/mp4">
+		</video>
+		
+
+		<div id="wrapper">
+			<div id="main">
+				
+				<!-- Header -->
+					<header id="header">
+						<h1>Aarón Alcaide</h1>
+						<p>Creador Audiovisual</p>
+						<nav>
+							
+							<ul>
+								<li><a href="https://www.instagram.com/akaarxn_" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://open.spotify.com/intl-es/artist/39lU3iP6cdlue5qfr7IrMB?si=mpwsR3V7RHyv5Ka3sab0yw" target="_blank" class="icon brands fa-spotify"><span class="label">Spotify</span></a></li>
+								<li><a href="https://www.youtube.com/channel/UCTkRzO_JGHC0EQWZyx2TE4Q" target="_blank" class="icon brands fa-youtube"><span class="label">Canal Youtube</span></a></li>
+								<li><a href="almairreal.html" class="icon brands fa-readme"><span class="label">Alma Irreal</span></a></li>
+								<li><a href="alwayslucky.html" class="icon brands fa-gratipay"><span class="label">Always Lucky</span></a></li>
+								
+
+
+							</ul>
+						</nav>
+					</header>
+
+
+			</div>
+		</div>
+
+		
+
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+
+		var video = document.getElementById('video-overlay');
+    	video.playbackRate = 0.7;
+
+		
+
+		</script>
+	</body>
+</html>
