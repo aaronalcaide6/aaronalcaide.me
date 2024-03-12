@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+
+
+<html>
+<style>
+	h2 {
+		text-decoration: underline;
+	}
+
+	a img {
+		max-width: 300px;
+		height: auto;
+		border-radius: 20px;
+		
+	}
+</style>
+
+<head>
+	<title>Aarón Alcaide</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<link rel="icon" href="favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+<body
+	style="background-image: url('assets/css/images/bg.jpg'); background-size: cover; background-position: center; height: 100vh; margin: 0;">
+
+
+
+
+	<div id="wrapper">
+		<div id="main">
+
+			<header id="header">
+				<h1>LIBROS</h1>
+				<h3>Estos son los libros publicados actualmente.</h3>
+				<br>
+				<a href="almairreal.html">
+					<img src="almairreal.img.jpg" alt="ALMA IRREAL">
+				</a>
+				<br>
+
+				<br>
+
+				<a href="index.html" style="text-decoration: none;">
+					<img src="flecha.png" style="height: 60px;">
+				</a>
+			</header>
+
+		</div>
+	</div>
+
+
+
+	<script>
+		window.onload = function () { document.body.classList.remove('is-preload'); }
+		window.ontouchmove = function () { return false; }
+		window.onorientationchange = function () { document.body.scrollTop = 0; }
+
+		var video = document.getElementById('video-overlay');
+		video.playbackRate = 0.7;
+	</script>
+</body>
+
+</html>
